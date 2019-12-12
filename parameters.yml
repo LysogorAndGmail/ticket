@@ -1,0 +1,14 @@
+parameters:
+    database_driver: pdo_mysql
+        database_host: 127.0.0.1
+            database_port: null
+                database_name: svitgocomua_disp
+                    database_user: svitgocomuadisp
+                        database_password: Europaukraine@2012Disp
+                            mailer_transport: smtp
+                                mailer_host: 127.0.0.1
+                                    mailer_user: null
+                                        mailer_password: null
+                                            locale: en
+                                                secret: 52069043b3f357569619af99519b9316fd47afe7
+                                                    database_path: null

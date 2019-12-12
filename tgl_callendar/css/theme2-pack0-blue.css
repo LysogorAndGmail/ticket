@@ -1,0 +1,252 @@
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 300;
+	src: url(http://fonts.gstatic.com/s/ubuntu/v7/_aijTyevf54tkVDLy-dlnD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'),local('Ubuntu-Light'), local('Ubuntu Light');
+}
+.theme2-pack0-blue {
+	position: absolute;
+	font-family: Ubuntu, Arial, sans-serif;
+	text-transform: capitalize;
+	border: 1px solid;
+	border-radius: 4px;
+}
+.theme2-pack0-blue #calendar {
+	display: inline-block;
+	vertical-align: top;
+}
+.theme2-pack0-blue table {
+	border-collapse: collapse;
+}
+.theme2-pack0-blue #contMonth,
+.theme2-pack0-blue #contYear {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	font-size: 14px;
+}
+.theme2-pack0-blue #contMonth:hover,
+.theme2-pack0-blue #contYear:hover {
+	cursor: pointer;
+}
+.theme2-pack0-blue #monthBtn,
+.theme2-pack0-blue #yearBtn{
+	margin: 0px;
+	padding: 14px 0px;
+}
+.theme2-pack0-blue #months,
+.theme2-pack0-blue #years,
+.theme2-pack0-blue #time {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+	border-left: 1px solid;
+}
+.theme2-pack0-blue .month,
+.theme2-pack0-blue .year {
+	padding: 5px 15px;
+	cursor: pointer;
+	line-height: 13px;
+}
+.theme2-pack0-blue .day {
+	font-weight: normal;
+	padding: 10px;
+	border-bottom: 1px solid;
+	font-size: 11px;
+	cursor: default;
+}
+.theme2-pack0-blue .date {
+	border: 1px solid;
+	padding: 10px 5px;
+	text-align: center;
+	font-size: 12px;
+	position:relative;
+}
+.theme2-pack0-blue .date:first-child {
+	border-left: none;
+}
+.theme2-pack0-blue .date:hover,
+.theme2-pack0-blue .dateSel {
+	cursor: pointer;
+}
+.theme2-pack0-blue .date:hover:before,
+.theme2-pack0-blue .dateSel:before{
+	content: "";
+	position: absolute;
+	border-bottom: 2px solid;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.theme2-pack0-blue {
+	background: #FAFAFF;
+}
+.theme2-pack0-blue,
+.theme2-pack0-blue .day,
+.theme2-pack0-blue .date {
+	border-color: #C9C6E7;
+}
+.theme2-pack0-blue .day,
+.theme2-pack0-blue .date:hover,
+.theme2-pack0-blue .dateSel {
+	background: #EBEAF6;
+}
+.theme2-pack0-blue .day {
+	color: #5A4DAC;
+}
+.theme2-pack0-blue #contMonth,
+.theme2-pack0-blue #contYear,
+.theme2-pack0-blue #months,
+.theme2-pack0-blue #years,
+.theme2-pack0-blue #time {
+	background: #5A4DAC;
+	color: #FAFAFF;
+}
+.theme2-pack0-blue #contMonth:hover,
+.theme2-pack0-blue #contYear:hover,
+.theme2-pack0-blue .month:hover,
+.theme2-pack0-blue .year:hover,
+.theme2-pack0-blue .monthSel,
+.theme2-pack0-blue .yearSel {
+	background: #42349C;
+}
+.theme2-pack0-blue #months,
+.theme2-pack0-blue #years,
+.theme2-pack0-blue #time,
+.theme2-pack0-blue .date:hover:before,
+.theme2-pack0-blue .dateSel:before {
+	border-color: #42349C;
+}
+.theme2-pack0-blue .date {
+	color: #42349C;
+}
+.theme2-pack0-blue .hours,
+.theme2-pack0-blue .minutes,
+.theme2-pack0-blue .seconds {
+	display: block;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.theme2-pack0-blue .hour,
+.theme2-pack0-blue .minute,
+.theme2-pack0-blue .second {
+	visibility: hidden;
+	cursor: pointer;
+	text-align:center;
+	background: #5A4DAC;
+	padding: 5px;
+	border-radius: 50px;
+	min-width: 15px;
+	color: #FFFAFA;
+	position: absolute;
+	top: -4px;
+	left: -6px;
+}
+.theme2-pack0-blue .hours li:hover > .hour,
+.theme2-pack0-blue .minutes li:hover > .minute,
+.theme2-pack0-blue .seconds li:hover > .second {
+	visibility: visible;
+	z-index:1;
+	color: #FFFAFA;
+}
+.theme2-pack0-blue .hours li:before,
+.theme2-pack0-blue .minutes li:before,
+.theme2-pack0-blue .seconds li:before {
+	content: ".";
+	visibility: visible;
+	padding: 5px;
+	color: #7A73A9;
+}
+.theme2-pack0-blue .hoursel:after,
+.theme2-pack0-blue .minutesel:after,
+.theme2-pack0-blue .secondsel:after {
+	content: "";
+	background: #42349C;
+	border-radius: 10px;
+	width: 4px;
+	height: 4px;
+	display: block;
+	position: absolute;
+	top: 13px;
+	left: 10px;
+	visibility: visible;
+}
+.theme2-pack0-blue .hours li:hover > .hoursel:after,
+.theme2-pack0-blue .minutes li:hover > .minutesel:after,
+.theme2-pack0-blue .seconds li:hover > .secondsel:after {
+	display: none;
+}
+.theme2-pack0-blue .seconds:after,
+.theme2-pack0-blue .minutes:after,
+.theme2-pack0-blue .hours:after {
+	content: attr(label);
+	display: none;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: -20px;
+	color: #FAFAFF;
+	font-weight: normal
+}
+.theme2-pack0-blue .seconds:hover:after,
+.theme2-pack0-blue .minutes:hover:after,
+.theme2-pack0-blue .hours:hover:after {
+	display: block;
+}
+.theme2-pack0-blue #time {
+	width: 228px;
+	padding: 36px 16px 20px 16px;
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#5A4DAC), color-stop(51%,#7066B1), color-stop(53%,#5A4DAC), color-stop(100%,#5A4DAC));
+	background: -webkit-linear-gradient(135deg, #5A4DAC 0%, #7066B1 51%, #5A4DAC 53%, #5A4DAC 100%);
+	background: -moz-linear-gradient(135deg, #5A4DAC 0%, #7066B1 51%, #5A4DAC 53%, #5A4DAC 100%);
+	background: -ms-linear-gradient(135deg, #5A4DAC 0%, #7066B1 51%, #5A4DAC 53%, #5A4DAC 100%);
+	background: -o-linear-gradient(135deg, #5A4DAC 0%, #7066B1 51%, #5A4DAC 53%, #5A4DAC 100%);
+	background: linear-gradient(135deg, #5A4DAC 0%, #7066B1 51%, #5A4DAC 53%, #5A4DAC 100%);
+}
+.theme2-pack0-blue #time:after {
+	background: 	-webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(49%,#d3cbff), color-stop(50%,#c5bbff), color-stop(100%,rgba(0,0,0,0))),
+			-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#FAFAFF), color-stop(65%,#FAFAFF), color-stop(66%,#FAFAFF), color-stop(100%,rgba(0,0,0,0)));
+	background: 	-webkit-linear-gradient(135deg, rgba(0,0,0,0) 0%, #d3cbff 49%, #c5bbff 50%, rgba(0,0,0,0) 100%), 
+			-webkit-radial-gradient(center, ellipse cover,  #FAFAFF 0%, #FAFAFF 65%, #FAFAFF 66%, rgba(255, 255, 255, 0) 100%);
+	background: 	-moz-linear-gradient(135deg, rgba(0,0,0,0) 0%, #d3cbff 49%, #c5bbff 50%, rgba(0,0,0,0) 100%), 
+			-moz-radial-gradient(center, ellipse cover,  #FAFAFF 0%, #684dff 65%, #FAFAFF 66%, rgba(255, 255, 255, 0) 100%);
+	background: 	-ms-linear-gradient(135deg, rgba(0,0,0,0) 0%, #d3cbff 49%, #c5bbff 50%, rgba(0,0,0,0) 100%), 
+			-ms-radial-gradient(center, ellipse cover,  #FAFAFF 0%, #684dff 65%, #FAFAFF 66%, rgba(255, 255, 255, 0) 100%);
+	background: 	-o-linear-gradient(135deg, rgba(0,0,0,0) 0%, #d3cbff 49%, #c5bbff 50%, rgba(0,0,0,0) 100%), 
+			-o-radial-gradient(center, ellipse cover,  #FAFAFF 0%, #684dff 65%, #FAFAFF 66%, rgba(255, 255, 255, 0) 100%);
+	background: 	linear-gradient(135deg, rgba(0,0,0,0) 0%, #d3cbff 49%, #c5bbff 50%, rgba(0,0,0,0) 100%), 
+			radial-gradient(ellipse at center, #FAFAFF 0%, #684dff 65%, #FAFAFF 66%, rgba(255, 255, 255, 0) 100%);
+	width: 208px;
+	height: 210px;
+	content: "";
+	display: block;
+	border-radius: 2000px;
+	margin-top: 8px;
+	margin-left: 8px;
+	border: rgba(0, 0, 255, 0.1) 1px solid;
+}
+.theme2-pack0-blue .hborder:before {
+	content: "";
+	display: block;
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	border-radius: 100px;
+	top: 49px;
+	left: 46px;
+	border: rgba(0, 0, 255, 0.1) 1px solid;
+	background: 	-webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(40%,#d3cbff), color-stop(60%,#c5bbff), color-stop(100%,rgba(0,0,0,0))),
+			-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(65%,#FAFAFF), color-stop(66%,#e4dfff), color-stop(100%,rgba(66, 52, 156, 1)));
+	background: 	-webkit-linear-gradient(135deg,  rgba(0,0,0,0) 0%, #d3cbff 40%, #c5bbff 60%, rgba(0,0,0,0) 100%), 
+			-webkit-radial-gradient(center, ellipse cover,  #FAFAFF 65%, #e4dfff 66%, rgba(66, 52, 156, 1) 100%);
+	background: 	-moz-linear-gradient(135deg,  rgba(0,0,0,0) 0%, #d3cbff 40%, #c5bbff 60%, rgba(0,0,0,0) 100%), 
+			-moz-radial-gradient(center, ellipse cover,  #FAFAFF 65%, #e4dfff 66%, rgba(66, 52, 156, 1) 100%);
+	background: 	-ms-linear-gradient(135deg,  rgba(0,0,0,0) 0%, #d3cbff 40%, #c5bbff 60%, rgba(0,0,0,0) 100%), 
+			-ms-radial-gradient(center, ellipse cover, #FAFAFF 65%, #e4dfff 66%, rgba(66, 52, 156, 1) 100%);
+	background: 	-o-linear-gradient(135deg,  rgba(0,0,0,0) 0%, #d3cbff 40%, #c5bbff 60%, rgba(0,0,0,0) 100%), 
+			-o-radial-gradient(center, ellipse cover,  #FAFAFF 65%, #e4dfff 66%, rgba(66, 52, 156, 1) 100%);
+	background: 	linear-gradient(135deg, rgba(0,0,0,0) 0%, #d3cbff 40%, #c5bbff 60%, rgba(0,0,0,0) 100%), 
+			radial-gradient(ellipse at center, #FAFAFF 65%, #e4dfff 66%, rgba(66, 52, 156, 1) 100%);
+}

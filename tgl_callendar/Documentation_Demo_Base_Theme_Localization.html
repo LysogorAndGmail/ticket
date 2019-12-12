@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Localization - tgl.js</title>
+		<script type="text/javascript" src="js/tgl.1.1.min.js"></script>
+	</head>
+
+	<body>
+		<form method='get'>
+			<input type='text' id='tes25' value='' name='tes25'>
+			<input type='text' id='tes26' value='' name='tes26'>
+		</form>
+
+		<script>
+			tgl({
+				input : 'tes25',
+				region : 'af',
+				day: 	{ 
+						af : ["Sondag","Maandag","Dinsdag","Woensdag","Donderdag","Vrydag","Saterdag"],
+					},
+				month: 	{ 
+						af : ["Januarie","Februarie","Maart","April","Mei","Junie","Julie","Augustus","September","Oktober","November","Desember"]
+					}
+			});
+
+			tgl({
+				input : 'tes26',
+				region : 'fil',
+				day: 	{ 
+						fil : ["Linggo","Lunes","Martes","Miyerkules","Huwebes","Biyernes","Sabado"],
+					},
+				month: 	{ 
+						fil : ["Enero","Pebrero","Marso","Abril","Mayo","Hunyo","Hulyo","Agosto","Setyembre","Oktubre","Nobyembre","Disyembre"]
+					}
+			});		</script>
+	</body>
+</html>

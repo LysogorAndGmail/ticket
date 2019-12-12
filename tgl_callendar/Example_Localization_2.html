@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>tgl.js</title>
+	<script type="text/javascript" src="js/tgl.1.1.min.js"></script>
+</head>
+
+<body>
+
+<p>Example, Localization</p>
+<form method='get'>
+	<input type='text' id='tes26' value='' name='tes26'>
+</form>
+
+<script>
+tgl({
+	input : 'tes26',
+	region : 'fil',
+	clasStyle : 'theme4-pack1-pink',
+	shortDay : '2',
+	day: 	{ 
+			fil : ["Linggo","Lunes","Martes","Miyerkules","Huwebes","Biyernes","Sabado"],
+		},
+	month: 	{ 
+			fil : ["Enero","Pebrero","Marso","Abril","Mayo","Hunyo","Hulyo","Agosto","Setyembre","Oktubre","Nobyembre","Disyembre"]
+		}
+});
+</script>
+
+</body>
+</html>

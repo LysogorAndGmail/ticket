@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>tgl.js</title>
+	<script type="text/javascript" src="js/tgl.1.1.min.js"></script>
+</head>
+
+<body>
+
+<p>Example, Time Picker & Date Picker Separate, theme4-pack1-teal</p>
+<form method='get'>
+	<p>Date</p>
+	<input type='text' id='tes6' value='' name='tes6'>
+	<p>Time</p>
+	<input type='text' id='tes7' value='' name='tes7'>
+</form>
+
+<script>
+tgl({
+	input : 'tes6',
+	clasStyle : 'theme4-pack1-teal',
+	shortDay : 3,
+	format : 'yy-mm-dd'
+});
+
+tgl({
+	input : 'tes7',
+	clasStyle : 'theme4-pack1-teal',
+	shortDay : 3,
+	timePicker : true,
+	datePicker : false,
+	format : 'h:n:s'
+});
+</script>
+
+</body>
+</html>

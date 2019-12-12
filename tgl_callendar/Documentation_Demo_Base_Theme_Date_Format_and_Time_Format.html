@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>Date Format and Time Format - tgl.js</title>
+		<script type="text/javascript" src="js/tgl.1.1.min.js"></script>
+	</head>
+
+	<body>
+		<form method='get'>
+			<input type='text' id='tes21' value='' name='tes21'>
+			<input type='text' id='tes22' value='' name='tes22'>
+			<input type='text' id='tes23' value='' name='tes23'>
+			<input type='text' id='tes24' value='' name='tes24'>
+			</br></br>
+			<input type='text' id='tes21t' value='' name='tes21t'>
+			<input type='text' id='tes22t' value='' name='tes22t'>
+			<input type='text' id='tes23t' value='' name='tes23t'>
+			<input type='text' id='tes24t' value='' name='tes24t'>
+		</form>
+
+		<script>
+			tgl({
+				input : 'tes21',
+				format : 'dddd, d mmmm yyyy'
+			});
+
+			tgl({
+				input : 'tes22',
+				format : 'mm-dd-yyyy'
+			});
+
+			tgl({
+				input : 'tes23',
+				format : 'yyyy/m/d'
+			});
+
+			tgl({
+				input : 'tes24',
+				format : 'yyyy mmmm(m) dddd(d) '
+			});
+
+
+			tgl({
+				input : 'tes21t',
+				format : 'dddd, d mmmm yyyy hh:nn',
+				timePicker : true
+			});
+
+			tgl({
+				input : 'tes22t',
+				format : 'hh:nn:ss',
+				timePicker : true,
+				datePicker : false
+			});
+
+			tgl({
+				input : 'tes23t',
+				format : 'h:n',
+				timePicker : true,
+				datePicker : false
+			});
+
+			tgl({
+				input : 'tes24t',
+				format : 'yyyy mmmm(m) dddd(d) h:n:s',
+				timePicker : true
+			});
+		</script>
+	</body>
+</html>

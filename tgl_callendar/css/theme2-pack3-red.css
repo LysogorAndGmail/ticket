@@ -1,0 +1,252 @@
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 300;
+	src: url(http://fonts.gstatic.com/s/ubuntu/v7/_aijTyevf54tkVDLy-dlnD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'),local('Ubuntu-Light'), local('Ubuntu Light');
+}
+.theme2-pack3-red {
+	position: absolute;
+	font-family: Ubuntu, Arial, sans-serif;
+	text-transform: capitalize;
+	border: 1px solid;
+	border-radius: 4px;
+}
+.theme2-pack3-red #calendar {
+	display: inline-block;
+	vertical-align: top;
+}
+.theme2-pack3-red table {
+	border-collapse: collapse;
+}
+.theme2-pack3-red #contMonth,
+.theme2-pack3-red #contYear {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	font-size: 14px;
+}
+.theme2-pack3-red #contMonth:hover,
+.theme2-pack3-red #contYear:hover {
+	cursor: pointer;
+}
+.theme2-pack3-red #monthBtn,
+.theme2-pack3-red #yearBtn{
+	margin: 0px;
+	padding: 14px 0px;
+}
+.theme2-pack3-red #months,
+.theme2-pack3-red #years,
+.theme2-pack3-red #time {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+	border-left: 1px solid;
+}
+.theme2-pack3-red .month,
+.theme2-pack3-red .year {
+	padding: 5px 15px;
+	cursor: pointer;
+	line-height: 13px;
+}
+.theme2-pack3-red .day {
+	font-weight: normal;
+	padding: 10px;
+	border-bottom: 1px solid;
+	font-size: 11px;
+	cursor: default;
+}
+.theme2-pack3-red .date {
+	border: 1px solid;
+	padding: 10px 5px;
+	text-align: center;
+	font-size: 12px;
+	position:relative;
+}
+.theme2-pack3-red .date:first-child {
+	border-left: none;
+}
+.theme2-pack3-red .date:hover,
+.theme2-pack3-red .dateSel {
+	cursor: pointer;
+}
+.theme2-pack3-red .date:hover:before,
+.theme2-pack3-red .dateSel:before{
+	content: "";
+	position: absolute;
+	border-bottom: 2px solid;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.theme2-pack3-red {
+	background: #FFFAFA;
+}
+.theme2-pack3-red,
+.theme2-pack3-red .day,
+.theme2-pack3-red .date {
+	border-color: #FCB1BA;
+}
+.theme2-pack3-red .day,
+.theme2-pack3-red .date:hover,
+.theme2-pack3-red .dateSel {
+	background: #FEE6E9;
+}
+.theme2-pack3-red .day {
+	color: #FA4F60;
+}
+.theme2-pack3-red #contMonth,
+.theme2-pack3-red #contYear,
+.theme2-pack3-red #months,
+.theme2-pack3-red #years,
+.theme2-pack3-red #time {
+	background: #FA4F60;
+	color: #FFFAFA;
+}
+.theme2-pack3-red #contMonth:hover,
+.theme2-pack3-red #contYear:hover,
+.theme2-pack3-red .month:hover,
+.theme2-pack3-red .year:hover,
+.theme2-pack3-red .monthSel,
+.theme2-pack3-red .yearSel {
+	background: #EC273B;
+}
+.theme2-pack3-red #months,
+.theme2-pack3-red #years,
+.theme2-pack3-red #time,
+.theme2-pack3-red .date:hover:before,
+.theme2-pack3-red .dateSel:before {
+	border-color: #EC273B;
+}
+.theme2-pack3-red .date {
+	color: #EC273B;
+}
+.theme2-pack3-red .hours,
+.theme2-pack3-red .minutes,
+.theme2-pack3-red .seconds {
+	display: block;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.theme2-pack3-red .hour,
+.theme2-pack3-red .minute,
+.theme2-pack3-red .second {
+	visibility: hidden;
+	cursor: pointer;
+	text-align:center;
+	background: #EC273B;
+	padding: 5px;
+	border-radius: 50px;
+	min-width: 15px;
+	color: #FFFAFA;
+	position: absolute;
+	top: -4px;
+	left: -6px;
+}
+.theme2-pack3-red .hours li:hover > .hour,
+.theme2-pack3-red .minutes li:hover > .minute,
+.theme2-pack3-red .seconds li:hover > .second {
+	visibility: visible;
+	z-index:1;
+	color: #FFFAFA;
+}
+.theme2-pack3-red .hours li:before,
+.theme2-pack3-red .minutes li:before,
+.theme2-pack3-red .seconds li:before {
+	content: ".";
+	visibility: visible;
+	padding: 5px;
+	color: #FA4F60;
+}
+.theme2-pack3-red .hoursel:after,
+.theme2-pack3-red .minutesel:after,
+.theme2-pack3-red .secondsel:after {
+	content: "";
+	background: #C30000;
+	border-radius: 10px;
+	width: 4px;
+	height: 4px;
+	display: block;
+	position: absolute;
+	top: 13px;
+	left: 10px;
+	visibility: visible;
+}
+.theme2-pack3-red .hours li:hover > .hoursel:after,
+.theme2-pack3-red .minutes li:hover > .minutesel:after,
+.theme2-pack3-red .seconds li:hover > .secondsel:after {
+	display: none;
+}
+.theme2-pack3-red .seconds:after,
+.theme2-pack3-red .minutes:after,
+.theme2-pack3-red .hours:after {
+	content: attr(label);
+	display: none;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: -20px;
+	color: #FFFAFA;
+	font-weight: normal
+}
+.theme2-pack3-red .seconds:hover:after,
+.theme2-pack3-red .minutes:hover:after,
+.theme2-pack3-red .hours:hover:after {
+	display: block;
+}
+.theme2-pack3-red #time {
+	width: 228px;
+	padding: 36px 16px 20px 16px;
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#FA4F60), color-stop(51%,#FC7280), color-stop(53%,#FA4F60), color-stop(100%,#FA4F60));
+	background: -webkit-linear-gradient(135deg, #FA4F60 0%, #FC7280 51%, #FA4F60 53%, #FA4F60 100%);
+	background: -moz-linear-gradient(135deg, #FA4F60 0%, #FC7280 51%, #FA4F60 53%, #FA4F60 100%);
+	background: -ms-linear-gradient(135deg, #FA4F60 0%, #FC7280 51%, #FA4F60 53%, #FA4F60 100%);
+	background: -o-linear-gradient(135deg, #FA4F60 0%, #FC7280 51%, #FA4F60 53%, #FA4F60 100%);
+	background: linear-gradient(135deg, #FA4F60 0%, #FC7280 51%, #FA4F60 53%, #FA4F60 100%);
+}
+.theme2-pack3-red #time:after {
+	background: 	-webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(49%,#ffcbcb), color-stop(50%,#ffbbbb), color-stop(100%,rgba(0,0,0,0))),
+			-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#FFFAFA), color-stop(65%,#ff4d4d), color-stop(66%,#FFFAFA), color-stop(100%,rgba(255, 255, 255, 0)));
+	background: 	-webkit-linear-gradient(135deg, rgba(0,0,0,0) 0%, #ffcbcb 49%, #ffbbbb 50%, rgba(0,0,0,0) 100%), 
+			-webkit-radial-gradient(center, ellipse cover, #FFFAFA 0%, #ff4d4d 65%, #FFFAFA 66%, rgba(255, 255, 255, 0) 100%);
+	background: 	-moz-linear-gradient(135deg, rgba(0,0,0,0) 0%, #ffcbcb 49%, #ffbbbb 50%, rgba(0,0,0,0) 100%), 
+			-moz-radial-gradient(center, ellipse cover, #FFFAFA 0%, #ff4d4d 65%, #FFFAFA 66%, rgba(255, 255, 255, 0) 100%);
+	background: 	-ms-linear-gradient(135deg, rgba(0,0,0,0) 0%, #ffcbcb 49%, #ffbbbb 50%, rgba(0,0,0,0) 100%), 
+			-ms-radial-gradient(center, ellipse cover,  #FFFAFA 0%, #ff4d4d 65%, #FFFAFA 66%, rgba(255, 255, 255, 0) 100%);
+	background: 	-o-linear-gradient(135deg, rgba(0,0,0,0) 0%, #ffcbcb 49%, #ffbbbb 50%, rgba(0,0,0,0) 100%), 
+			-o-radial-gradient(center, ellipse cover,  #FFFAFA 0%, #ff4d4d 65%, #FFFAFA 66%, rgba(255, 255, 255, 0) 100%);
+	background: 	linear-gradient(135deg, rgba(0,0,0,0) 0%, #ffcbcb 49%, #ffbbbb 50%, rgba(0,0,0,0) 100%), 
+			radial-gradient(ellipse at center, #FFFAFA 0%, #ff4d4d 65%, #FFFAFA 66%, rgba(255, 255, 255, 0) 100%);
+	width: 208px;
+	height: 210px;
+	content: "";
+	display: block;
+	border-radius: 2000px;
+	margin-top: 8px;
+	margin-left: 8px;
+	border: rgba(255, 0, 0, 0.1) 1px solid;
+}
+.theme2-pack3-red .hborder:before {
+	content: "";
+	display: block;
+	width: 130px;
+	height: 130px;
+	position: absolute;
+	border-radius: 100px;
+	top: 49px;
+	left: 46px;
+	border: rgba(255, 0, 0, 0.1) 1px solid;
+	background: 	-webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(40%,#ffcbcb), color-stop(60%,#ffbbbb), color-stop(100%,rgba(0,0,0,0))),
+			-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0)), color-stop(65%,#FFFAFA), color-stop(66%,#ffdfdf), color-stop(100%,rgba(255, 250, 250, 1)));
+	background: 	-webkit-linear-gradient(135deg,  rgba(0,0,0,0) 0%, #ffcbcb 40%, #ffbbbb 60%, rgba(0,0,0,0) 100%), 
+			-webkit-radial-gradient(center, ellipse cover,  #FFFAFA 65%, #ffdfdf 66%, rgba(255, 250, 250, 1) 100%);
+	background: 	-moz-linear-gradient(135deg,  rgba(0,0,0,0) 0%, #ffcbcb 40%, #ffbbbb 60%, rgba(0,0,0,0) 100%), 
+			-moz-radial-gradient(center, ellipse cover,  #FFFAFA 65%, #ffdfdf 66%, rgba(255, 250, 250, 1) 100%);
+	background: 	-ms-linear-gradient(135deg,  rgba(0,0,0,0) 0%, #ffcbcb 40%, #ffbbbb 60%, rgba(0,0,0,0) 100%), 
+			-ms-radial-gradient(center, ellipse cover, #FFFAFA 65%, #ffdfdf 66%, rgba(255, 250, 250, 1) 100%);
+	background: 	-o-linear-gradient(135deg,  rgba(0,0,0,0) 0%, #ffcbcb 40%, #ffbbbb 60%, rgba(0,0,0,0) 100%), 
+			-o-radial-gradient(center, ellipse cover,  #FFFAFA 65%, #ffdfdf 66%, rgba(255, 250, 250, 1) 100%);
+	background: 	linear-gradient(135deg, rgba(0,0,0,0) 0%, #ffcbcb 40%, #ffbbbb 60%, rgba(0,0,0,0) 100%), 
+			radial-gradient(ellipse at center, #FFFAFA 65%, #ffdfdf 66%, rgba(255, 250, 250, 1) 100%);
+}

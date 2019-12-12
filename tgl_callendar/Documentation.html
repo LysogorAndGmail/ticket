@@ -1,0 +1,1597 @@
+<html>
+<head>
+	<title>tgl.js</title>
+	<link rel="stylesheet" type="text/css" href="css/style-document.css">
+	<script type="text/javascript" src="js/tgl.1.1.min.js"></script>
+</head>
+
+<body>
+<div id='baris-atas'>
+	<h1><img src='images/tgl-b30.png' width='20px'></img>TGL<span>.js</span></h1>
+	<h2>javascript date picker & time picker</h2>
+	<div id='menu' class='menu'>
+	<ul>
+		<li class='tombol'>Table of Contents</li>
+	</ul>
+	</div>
+</div>
+
+<div id='halaman'>
+<div id='ah1' class='bagian isimenu' label='Simple Usage'>
+	<div class='bagian-isi'>
+		<div class='isi'>
+			<h2>Simple usage</h2>
+			<div class='box'>
+				<p>Installing the tgl.js is so easy.</p>
+			</div>
+			<div class='box'>
+				<p>First</p>
+				<p>add these followwing code inside <span><</span>head<span>></span> of your page.</p>
+			</div>
+<textarea class='kode' readonly wrap=off>
+<html>
+	<head>
+		<script type="text/javascript" src="js/tgl.1.0.min.js"></script>
+</textarea>
+			<div class='box'>
+				<p>Second</p>
+				<p>Create input form give id and name</p>
+			</div>
+<textarea class='kode' readonly wrap=off>
+<html>
+	<body>
+		<form method='get'>
+			<input type='text' id='tes1' value='' name='tes1'>
+		</form>
+</textarea>
+			<div class='box'>
+				<p>Last</p>
+				<p>add configuration codes before end of <span><</span>body<span>></span> of your page.</p>
+			</div>
+<textarea class='kode' readonly wrap=off>
+		<script>
+			tgl({
+				input : 'tes1'
+			});
+		</script>
+	</body>
+</html>
+</textarea>
+			
+
+		</div>
+		<div class='bagian-dua'>
+			<div class='kotak'>
+				<div class='kotak-judul'>
+					<img src='images/demo.png' width='20px'>
+					<h1>demo :</h1>
+				</div>
+				<div class='kotak-isi'>
+					<div class='kotak-tulisan'>
+						<form method='get'>
+							<input type='text' id='tes1' value='' name='tes1'>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='bagian-dua'>
+			<div class='kotak'>
+				<div class='kotak-judul'>
+					<img src='images/code.png' width='20px'>
+					<h1></img>code :</h1>
+				</div>
+				<div class='kotak-isi'>
+<textarea class='kode' readonly wrap=off>
+<html>
+	<head>
+		<title>Simple Usage - tgl.js</title>
+		<script type="text/javascript" src="js/tgl.1.0.min.js"></script>
+	</head>
+
+	<body>
+		<form method='get'>
+			<input type='text' id='tes1' value='' name='tes1'>
+		</form>
+
+		<script>
+			tgl({
+				input : 'tes1'
+			});
+		</script>
+	</body>
+</html>
+</textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class='bagian tengah'>
+	<div class='pemisah'>
+		<a href='#'><img src='images/atas.png'></img></a>
+	</div>
+</div>
+
+<div id='ah2' class='bagian isimenu' label='Short Day'>
+	<div class='bagian-isi'>
+		<div class='isi'>
+			<h2>Short day</h2>
+			<div class='box'>
+				<p>If you look above, with default theme, days name are too long.  To make simple, give short day configuration</p>
+				<p>Just put number the length what you want</p>
+			</div>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes2',
+				shortDay : '1'
+			});
+</textarea>
+
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes3',
+				shortDay : '2'
+			});
+</textarea>
+
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes5',
+				shortDay : '4'
+			});
+</textarea>
+
+		</div>
+		<div class='bagian-dua'>
+			<div class='kotak'>
+				<div class='kotak-judul'>
+					<img src='images/demo.png' width='20px'>
+					<h1>demo :</h1>
+				</div>
+				<div class='kotak-isi'>
+					<div class='kotak-tulisan'>
+						<form method='get'>
+							<input type='text' id='tes2' value='' name='tes2'>
+							<input type='text' id='tes3' value='' name='tes3'>
+							<input type='text' id='tes4' value='' name='tes4'>
+							<input type='text' id='tes5' value='' name='tes5'>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='bagian-dua'>
+			<div class='kotak'>
+				<div class='kotak-judul'>
+					<img src='images/code.png' width='20px'>
+					<h1></img>code :</h1>
+				</div>
+				<div class='kotak-isi'>
+<textarea class='kode' readonly wrap=off>
+<html>
+	<head>
+		<title>Short Day - tgl.js</title>
+		<script type="text/javascript" src="js/tgl.1.0.min.js"></script>
+	</head>
+
+	<body>
+		<form method='get'>
+			<input type='text' id='tes2' value='' name='tes2'>
+			<input type='text' id='tes3' value='' name='tes3'>
+			<input type='text' id='tes4' value='' name='tes4'>
+			<input type='text' id='tes5' value='' name='tes5'>
+		</form>
+
+		<script>
+			tgl({
+				input : 'tes2',
+				shortDay : '1'
+			});
+
+			tgl({
+				input : 'tes3',
+				shortDay : '2'
+			});
+
+			tgl({
+				input : 'tes4',
+				shortDay : '3'
+			});
+
+			tgl({
+				input : 'tes5',
+				shortDay : '4'
+			});
+		</script>
+	</body>
+</html>
+</textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class='bagian tengah'>
+	<div class='pemisah'>
+		<a href='#'><img src='images/atas.png'></img></a>
+	</div>
+</div>
+
+<div id='ah6' class='bagian isimenu' label='Time Picker'>
+	<div class='bagian-isi'>
+		<div class='isi'>
+			<h2>Time Picker</h2>
+			<div class='box'>
+				<p>Now tgl.js support time picker.</p>
+				<p>You can show date picker with time picker or just show time picker</p>
+			</div>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes2t',
+				timePicker : true
+			});
+</textarea>
+
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes3t',
+				timePicker : true,
+				datePicker : false
+			});
+</textarea>
+			<div class='box'>
+				<p>note : you must use with time format, this option just show time picker</p>
+			</div>
+		</div>
+		<div class='bagian-dua'>
+			<div class='kotak'>
+				<div class='kotak-judul'>
+					<img src='images/demo.png' width='20px'>
+					<h1>demo :</h1>
+				</div>
+				<div class='kotak-isi'>
+					<div class='kotak-tulisan'>
+						<form method='get'>
+							<input type='text' id='tes2t' value='' name='tes2t'>
+							<input type='text' id='tes3t' value='' name='tes3t'>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='bagian-dua'>
+			<div class='kotak'>
+				<div class='kotak-judul'>
+					<img src='images/code.png' width='20px'>
+					<h1></img>code :</h1>
+				</div>
+				<div class='kotak-isi'>
+<textarea class='kode' readonly wrap=off>
+<html>
+	<head>
+		<title>Time Picker - tgl.js</title>
+		<script type="text/javascript" src="js/tgl.1.0.min.js"></script>
+	</head>
+
+	<body>
+		<form method='get'>
+			<input type='text' id='tes2t' value='' name='tes2t'>
+			<input type='text' id='tes3t' value='' name='tes3t'>
+		</form>
+
+		<script>
+			tgl({
+				input : 'tes2t',
+				timePicker : true
+			});
+
+			tgl({
+				input : 'tes3t',
+				timePicker : true,
+				datePicker : false
+			});
+		</script>
+	</body>
+</html>
+</textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class='bagian tengah'>
+	<div class='pemisah'>
+		<a href='#'><img src='images/atas.png'></img></a>
+	</div>
+</div>
+
+<div id='ah4' class='bagian isimenu' label='Date format & Time Format'>
+	<div class='bagian-isi'>
+		<div class='isi'>
+			<h2>Date format & Time Format</h2>
+			<div class='box bagian-dua'>
+				<p>Change date format, easily and simple</p>
+				<div class='teks'>
+					<p><span>d</span> : 1-31</p>
+					<p><span>dd</span> : 01-31</p>
+					<p><span>ddd</span> : mon-sun</p>
+					<p><span>dddd</span> : monday-sunday</p>
+					<p><span>m</span> : 1-12</p>	
+					<p><span>mm</span> : 01-12</p>
+					<p><span>mmm</span> : jan-dec</p>
+					<p><span>mmmm</span> : january-december</p>
+					<p><span>y</span> : 0-99</p>
+					<p><span>yy</span> : 01-99</p>
+					<p><span>yyy</span> : 001-999</p>
+					<p><span>yyyy</span> : 0001-9999</p>	
+				</div>
+			</div>
+			<div class='box bagian-dua'>
+				<p>and this for time format</p>
+				<div class='teks'>
+					<p><span>h</span> : 0-23</p>
+					<p><span>hh</span> : 00-23</p>
+					<p><span>n</span> : 0-59</p>
+					<p><span>nn</span> : 00-59</p>
+					<p><span>s</span> : 0-59</p>
+					<p><span>ss</span> : 00-59</p>
+				</div>
+			</div>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes22',
+				format : 'mm-dd-yyyy'
+</textarea>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes24',
+				format : 'yyyy mmmm(m) dddd(d) '
+			});
+</textarea>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes22t',
+				format : 'hh:nn:ss',
+				timePicker : true,
+				datePicker : false
+</textarea>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes24t',
+				format : 'dd/mm/yyyy hh:nn',
+				timePicker : true
+			});
+</textarea>
+
+		</div>
+		<div class='bagian-dua'>
+			<div class='kotak'>
+				<div class='kotak-judul'>
+					<img src='images/demo.png' width='20px'>
+					<h1>demo :</h1>
+				</div>
+				<div class='kotak-isi'>
+					<div class='kotak-tulisan'>
+						<form method='get'>
+							<input type='text' id='tes21' value='' name='tes21'>
+							<input type='text' id='tes22' value='' name='tes22'>
+							<input type='text' id='tes23' value='' name='tes23'>
+							<input type='text' id='tes24' value='' name='tes24'>
+							</br></br>
+							<input type='text' id='tes21t' value='' name='tes21t'>
+							<input type='text' id='tes22t' value='' name='tes22t'>
+							<input type='text' id='tes23t' value='' name='tes23t'>
+							<input type='text' id='tes24t' value='' name='tes24t'>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='bagian-dua'>
+			<div class='kotak'>
+				<div class='kotak-judul'>
+					<img src='images/code.png' width='20px'>
+					<h1></img>code :</h1>
+				</div>
+				<div class='kotak-isi'>
+<textarea class='kode' readonly wrap=off>
+<html>
+	<head>
+		<title>Date Format - tgl.js</title>
+		<script type="text/javascript" src="js/tgl.1.0.min.js"></script>
+	</head>
+
+	<body>
+		<form method='get'>
+			<input type='text' id='tes21' value='' name='tes21'>
+			<input type='text' id='tes22' value='' name='tes22'>
+			<input type='text' id='tes23' value='' name='tes23'>
+			<input type='text' id='tes24' value='' name='tes24'>
+			</br></br>
+			<input type='text' id='tes21t' value='' name='tes21t'>
+			<input type='text' id='tes22t' value='' name='tes22t'>
+			<input type='text' id='tes23t' value='' name='tes23t'>
+			<input type='text' id='tes24t' value='' name='tes24t'>
+		</form>
+
+		<script>
+			tgl({
+				input : 'tes21',
+				format : 'dddd, d mmmm yyyy'
+			});
+
+			tgl({
+				input : 'tes22',
+				format : 'mm-dd-yyyy'
+			});
+
+			tgl({
+				input : 'tes23',
+				format : 'yyyy/m/d'
+			});
+
+			tgl({
+				input : 'tes24',
+				format : 'yyyy mmmm(m) dddd(d) '
+			});
+
+
+			tgl({
+				input : 'tes21t',
+				format : 'dddd, d mmmm yyyy hh:nn',
+				timePicker : true
+			});
+
+			tgl({
+				input : 'tes22t',
+				format : 'hh:nn:ss',
+				timePicker : true,
+				datePicker : false
+			});
+
+			tgl({
+				input : 'tes23t',
+				format : 'h:n',
+				timePicker : true,
+				datePicker : false
+			});
+
+			tgl({
+				input : 'tes24t',
+				format : 'yyyy mmmm(m) dddd(d) h:n:s',
+				timePicker : true
+			});
+		</script>
+	</body>
+</html>
+</textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class='bagian tengah'>
+	<div class='pemisah'>
+		<a href='#'><img src='images/atas.png'></img></a>
+	</div>
+</div>
+
+<div id='ah3' class='bagian isimenu' label='Multi Theme'>
+	<div class='bagian-isi'>
+		<div class='isi'>
+			<h2>Multi Theme</h2>
+			<div class='box'>
+				<p>We are create 2 theme with some colours<p>
+				<p>Totally we have 16 theme plus 1 default</p>
+			</div>
+			<div class='box bagian-dua'>
+				<ol>
+					<li>theme2-pack0-blue</li>
+					<li>theme2-pack0-purple</li>
+					<li>theme2-pack2-blue</li>
+					<li>theme2-pack2-green</li>
+					<li>theme2-pack2-orange</li>
+					<li>theme2-pack3-red</li>
+					<li>theme2-pack5-pink</li>
+					<li>theme2-pack5-yellow</li>
+					<li>theme2-pack6-teal</li>
+				</ol>
+			</div>
+			<div class='box bagian-dua'>
+				<ol>
+					<li>theme4-pack1-blue</li>
+					<li>theme4-pack1-brown</li>
+					<li>theme4-pack1-green</li>
+					<li>theme4-pack1-pink</li>
+					<li>theme4-pack1-purple</li>
+					<li>theme4-pack1-red</li>
+					<li>theme4-pack1-teal</li>
+				</ol>
+			</div>
+			<div class='box'>
+				<p>Just put theme name in tgl.js configuration, you dont need to put any css in html head, it's automatically call css style</p>
+			</div>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes9',
+				clasStyle : 'theme2-pack2-blue',
+</textarea>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes17',
+				clasStyle : 'theme4-pack1-green',
+				shortDay : '2',
+			});
+</textarea>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes9t',
+				clasStyle : 'theme2-pack2-orange',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+</textarea>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes17t',
+				clasStyle : 'theme4-pack1-teal',
+				shortDay : '2',
+				timePicker : true,
+				format : 'dddd, d mmmm (m) yyyy hh:nn:ss'
+			});
+</textarea>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes9ty',
+				clasStyle : 'theme2-pack5-yellow',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+</textarea>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes17ty',
+				clasStyle : 'theme4-pack1-blue',
+				shortDay : '2',
+				timePicker : true,
+				datePicker : false,
+				format : 'h:n'
+			});
+</textarea>
+			<div class='box'>
+				<p>You can change css style, or maybe create customize theme, just use different css file name and different class name, please look at the css folder</p>
+			</div>
+
+		</div>
+		<div class='bagian-dua'>
+			<div class='kotak'>
+				<div class='kotak-judul'>
+					<img src='images/demo.png' width='20px'>
+					<h1>demo :</h1>
+				</div>
+				<div class='kotak-isi'>
+					<div class='kotak-tulisan'>
+						<form method='get'>
+							<input type='text' id='tes6' value='' name='tes6'>
+							<input type='text' id='tes7' value='' name='tes7'>
+							<input type='text' id='tes8' value='' name='tes8'>
+							<input type='text' id='tes9' value='' name='tes9'>
+							<input type='text' id='tes10' value='' name='tes10'>
+							<input type='text' id='tes11' value='' name='tes11'>
+							<input type='text' id='tes12' value='' name='tes12'>
+							<input type='text' id='tes13' value='' name='tes13'>
+							<input type='text' id='tes13a' value='' name='tes13a'>
+							</br></br>
+							<input type='text' id='tes14' value='' name='tes14'>
+							<input type='text' id='tes15' value='' name='tes15'>
+							<input type='text' id='tes16' value='' name='tes16'>
+							<input type='text' id='tes17' value='' name='tes17'>
+							<input type='text' id='tes18' value='' name='tes18'>
+							<input type='text' id='tes19' value='' name='tes19'>
+							<input type='text' id='tes20' value='' name='tes20'>
+							</br></br>
+							<input type='text' id='tes6t' value='' name='tes6t'>
+							<input type='text' id='tes7t' value='' name='tes7t'>
+							<input type='text' id='tes8t' value='' name='tes8t'>
+							<input type='text' id='tes9t' value='' name='tes9t'>
+							<input type='text' id='tes10t' value='' name='tes10t'>
+							<input type='text' id='tes11t' value='' name='tes11t'>
+							<input type='text' id='tes12t' value='' name='tes12t'>
+							<input type='text' id='tes13t' value='' name='tes13t'>
+							<input type='text' id='tes13at' value='' name='tes13at'>
+							</br></br>
+							<input type='text' id='tes14t' value='' name='tes14t'>
+							<input type='text' id='tes15t' value='' name='tes15t'>
+							<input type='text' id='tes16t' value='' name='tes16t'>
+							<input type='text' id='tes17t' value='' name='tes17t'>
+							<input type='text' id='tes18t' value='' name='tes18t'>
+							<input type='text' id='tes19t' value='' name='tes19t'>
+							<input type='text' id='tes20t' value='' name='tes20t'>
+							</br></br>
+							<input type='text' id='tes6ty' value='' name='tes6ty'>
+							<input type='text' id='tes7ty' value='' name='tes7ty'>
+							<input type='text' id='tes8ty' value='' name='tes8ty'>
+							<input type='text' id='tes9ty' value='' name='tes9ty'>
+							<input type='text' id='tes10ty' value='' name='tes10ty'>
+							<input type='text' id='tes11ty' value='' name='tes11ty'>
+							<input type='text' id='tes12ty' value='' name='tes12ty'>
+							<input type='text' id='tes13ty' value='' name='tes13ty'>
+							<input type='text' id='tes13aty' value='' name='tes13aty'>
+							</br></br>
+							<input type='text' id='tes14ty' value='' name='tes14ty'>
+							<input type='text' id='tes15ty' value='' name='tes15ty'>
+							<input type='text' id='tes16ty' value='' name='tes16ty'>
+							<input type='text' id='tes17ty' value='' name='tes17ty'>
+							<input type='text' id='tes18ty' value='' name='tes18ty'>
+							<input type='text' id='tes19ty' value='' name='tes19ty'>
+							<input type='text' id='tes20ty' value='' name='tes20ty'>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='bagian-dua'>
+			<div class='kotak'>
+				<div class='kotak-judul'>
+					<img src='images/code.png' width='20px'>
+					<h1></img>code :</h1>
+				</div>
+				<div class='kotak-isi'>
+<textarea class='kode' readonly wrap=off>
+<html>
+	<head>
+		<title>Multi Theme - tgl.js</title>
+		<script type="text/javascript" src="js/tgl.1.0.min.js"></script>
+	</head>
+
+	<body>
+		<form method='get'>
+			<input type='text' id='tes6' value='' name='tes6'>
+			<input type='text' id='tes7' value='' name='tes7'>
+			<input type='text' id='tes8' value='' name='tes8'>
+			<input type='text' id='tes9' value='' name='tes9'>
+			<input type='text' id='tes10' value='' name='tes10'>
+			<input type='text' id='tes11' value='' name='tes11'>
+			<input type='text' id='tes12' value='' name='tes12'>
+			<input type='text' id='tes13' value='' name='tes13'>
+			<input type='text' id='tes13a' value='' name='tes13a'>
+			</br></br>
+			<input type='text' id='tes14' value='' name='tes14'>
+			<input type='text' id='tes15' value='' name='tes15'>
+			<input type='text' id='tes16' value='' name='tes16'>
+			<input type='text' id='tes17' value='' name='tes17'>
+			<input type='text' id='tes18' value='' name='tes18'>
+			<input type='text' id='tes19' value='' name='tes19'>
+			<input type='text' id='tes20' value='' name='tes20'>
+			</br></br>
+			<input type='text' id='tes6t' value='' name='tes6t'>
+			<input type='text' id='tes7t' value='' name='tes7t'>
+			<input type='text' id='tes8t' value='' name='tes8t'>
+			<input type='text' id='tes9t' value='' name='tes9t'>
+			<input type='text' id='tes10t' value='' name='tes10t'>
+			<input type='text' id='tes11t' value='' name='tes11t'>
+			<input type='text' id='tes12t' value='' name='tes12t'>
+			<input type='text' id='tes13t' value='' name='tes13t'>
+			<input type='text' id='tes13at' value='' name='tes13at'>
+			</br></br>
+			<input type='text' id='tes14t' value='' name='tes14t'>
+			<input type='text' id='tes15t' value='' name='tes15t'>
+			<input type='text' id='tes16t' value='' name='tes16t'>
+			<input type='text' id='tes17t' value='' name='tes17t'>
+			<input type='text' id='tes18t' value='' name='tes18t'>
+			<input type='text' id='tes19t' value='' name='tes19t'>
+			<input type='text' id='tes20t' value='' name='tes20t'>
+			</br></br>
+			<input type='text' id='tes6ty' value='' name='tes6ty'>
+			<input type='text' id='tes7ty' value='' name='tes7ty'>
+			<input type='text' id='tes8ty' value='' name='tes8ty'>
+			<input type='text' id='tes9ty' value='' name='tes9ty'>
+			<input type='text' id='tes10ty' value='' name='tes10ty'>
+			<input type='text' id='tes11ty' value='' name='tes11ty'>
+			<input type='text' id='tes12ty' value='' name='tes12ty'>
+			<input type='text' id='tes13ty' value='' name='tes13ty'>
+			<input type='text' id='tes13aty' value='' name='tes13aty'>
+			</br></br>
+			<input type='text' id='tes14ty' value='' name='tes14ty'>
+			<input type='text' id='tes15ty' value='' name='tes15ty'>
+			<input type='text' id='tes16ty' value='' name='tes16ty'>
+			<input type='text' id='tes17ty' value='' name='tes17ty'>
+			<input type='text' id='tes18ty' value='' name='tes18ty'>
+			<input type='text' id='tes19ty' value='' name='tes19ty'>
+			<input type='text' id='tes20ty' value='' name='tes20ty'>
+		</form>
+
+		<script>
+			/* theme2-pack */
+
+			tgl({
+				input : 'tes6',
+				clasStyle : 'theme2-pack0-blue',
+			});
+			tgl({
+				input : 'tes7',
+				clasStyle : 'theme2-pack0-purple',
+			});
+			tgl({
+				input : 'tes8',
+				clasStyle : 'theme2-pack2-blue',
+			});
+			tgl({
+				input : 'tes9',
+				clasStyle : 'theme2-pack2-green',
+			});
+			tgl({
+				input : 'tes10',
+				clasStyle : 'theme2-pack2-orange',
+			});
+			tgl({
+				input : 'tes11',
+				clasStyle : 'theme2-pack3-red',
+			});
+			tgl({
+				input : 'tes12',
+				clasStyle : 'theme2-pack5-pink',
+			});
+			tgl({
+				input : 'tes13',
+				clasStyle : 'theme2-pack5-yellow',
+			});
+			tgl({
+				input : 'tes13a',
+				clasStyle : 'theme2-pack6-teal',
+			});
+
+			/* theme4-pack */
+
+			tgl({
+				input : 'tes14',
+				clasStyle : 'theme4-pack1-blue',
+				shortDay : '2',
+			});
+			tgl({
+				input : 'tes15',
+				clasStyle : 'theme4-pack1-brown',
+				shortDay : '2',
+			});
+			tgl({
+				input : 'tes16',
+				clasStyle : 'theme4-pack1-green',
+				shortDay : '2',
+			});
+			tgl({
+				input : 'tes17',
+				clasStyle : 'theme4-pack1-pink',
+				shortDay : '2',
+			});
+			tgl({
+				input : 'tes18',
+				clasStyle : 'theme4-pack1-purple',
+				shortDay : '2',
+			});
+			tgl({
+				input : 'tes19',
+				clasStyle : 'theme4-pack1-red',
+				shortDay : '2',
+			});
+			tgl({
+				input : 'tes20',
+				clasStyle : 'theme4-pack1-teal',
+				shortDay : '2',
+			});
+
+			/* theme2-pack with time picker*/
+
+			tgl({
+				input : 'tes6t',
+				clasStyle : 'theme2-pack0-blue',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes7t',
+				clasStyle : 'theme2-pack0-purple',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes8t',
+				clasStyle : 'theme2-pack2-blue',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes9t',
+				clasStyle : 'theme2-pack2-green',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes10t',
+				clasStyle : 'theme2-pack2-orange',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes11t',
+				clasStyle : 'theme2-pack3-red',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes12t',
+				clasStyle : 'theme2-pack5-pink',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes13t',
+				clasStyle : 'theme2-pack5-yellow',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes13at',
+				clasStyle : 'theme2-pack6-teal',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+
+			/* theme4-pack with time picker*/
+
+			tgl({
+				input : 'tes14t',
+				clasStyle : 'theme4-pack1-blue',
+				shortDay : '2',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes15t',
+				clasStyle : 'theme4-pack1-brown',
+				shortDay : '2',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes16t',
+				clasStyle : 'theme4-pack1-green',
+				shortDay : '2',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes17t',
+				clasStyle : 'theme4-pack1-pink',
+				shortDay : '2',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes18t',
+				clasStyle : 'theme4-pack1-purple',
+				shortDay : '2',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes19t',
+				clasStyle : 'theme4-pack1-red',
+				shortDay : '2',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+			tgl({
+				input : 'tes20t',
+				clasStyle : 'theme4-pack1-teal',
+				shortDay : '2',
+				timePicker : true,
+				format : 'yyyy/mm/dd hh:nn'
+			});
+
+			/* theme2-pack time picker only*/
+
+			tgl({
+				input : 'tes6ty',
+				clasStyle : 'theme2-pack0-blue',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes7ty',
+				clasStyle : 'theme2-pack0-purple',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes8ty',
+				clasStyle : 'theme2-pack2-blue',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes9ty',
+				clasStyle : 'theme2-pack2-green',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes10ty',
+				clasStyle : 'theme2-pack2-orange',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes11ty',
+				clasStyle : 'theme2-pack3-red',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes12ty',
+				clasStyle : 'theme2-pack5-pink',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes13ty',
+				clasStyle : 'theme2-pack5-yellow',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes13aty',
+				clasStyle : 'theme2-pack6-teal',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+
+			/* theme4-pack time picker only*/
+
+			tgl({
+				input : 'tes14ty',
+				clasStyle : 'theme4-pack1-blue',
+				shortDay : '2',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes15ty',
+				clasStyle : 'theme4-pack1-brown',
+				shortDay : '2',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes16ty',
+				clasStyle : 'theme4-pack1-green',
+				shortDay : '2',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes17ty',
+				clasStyle : 'theme4-pack1-pink',
+				shortDay : '2',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes18ty',
+				clasStyle : 'theme4-pack1-purple',
+				shortDay : '2',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes19ty',
+				clasStyle : 'theme4-pack1-red',
+				shortDay : '2',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+			tgl({
+				input : 'tes20ty',
+				clasStyle : 'theme4-pack1-teal',
+				shortDay : '2',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+		</script>
+	</body>
+</html>
+</textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class='bagian tengah'>
+	<div class='pemisah'>
+		<a href='#'><img src='images/atas.png'></img></a>
+	</div>
+</div>
+
+<div id='ah5' class='bagian isimenu' label='Localization'>
+	<div class='bagian-isi'>
+		<div class='isi'>
+			<h2>Localization</h2>
+			<div class='box'>
+				<p>The last, customize days name and months name</p>
+				<p>Put configuration days name or months name</p>
+			</div>
+<textarea class='kode' readonly wrap=off>
+				day: 	{ 
+						af : ["Sondag","Maandag","Dinsdag","Woensdag","Donderdag","Vrydag","Saterdag"],
+					},
+</textarea>
+<textarea class='kode' readonly wrap=off>
+				day: 	{ 
+						fil : ["Linggo","Lunes","Martes","Miyerkules","Huwebes","Biyernes","Sabado"],
+					},
+</textarea>
+<textarea class='kode' readonly wrap=off>
+				month: 	{ 
+						af : ["Januarie","Februarie","Maart","April","Mei","Junie","Julie","Augustus","September","Oktober","November","Desember"]
+					}
+</textarea>
+<textarea class='kode' readonly wrap=off>
+				month: 	{ 
+						fil : ["Enero","Pebrero","Marso","Abril","Mayo","Hunyo","Hulyo","Agosto","Setyembre","Oktubre","Nobyembre","Disyembre"]
+					}
+</textarea>
+			<div class='box'>
+				<p>And then choose name customize days or months name</p>
+			</div>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes25',
+				region : 'af',
+</textarea>
+<textarea class='kode' readonly wrap=off>
+			tgl({
+				input : 'tes26',
+				region : 'fil',
+</textarea>
+
+		</div>
+		<div class='bagian-dua'>
+			<div class='kotak'>
+				<div class='kotak-judul'>
+					<img src='images/demo.png' width='20px'>
+					<h1>demo :</h1>
+				</div>
+				<div class='kotak-isi'>
+					<div class='kotak-tulisan'>
+						<form method='get'>
+							<input type='text' id='tes25' value='' name='tes25'>
+							<input type='text' id='tes26' value='' name='tes26'>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class='bagian-dua'>
+			<div class='kotak'>
+				<div class='kotak-judul'>
+					<img src='images/code.png' width='20px'>
+					<h1></img>code :</h1>
+				</div>
+				<div class='kotak-isi'>
+<textarea class='kode' readonly wrap=off>
+<html>
+	<head>
+		<title>Localization - tgl.js</title>
+		<script type="text/javascript" src="js/tgl.1.0.min.js"></script>
+	</head>
+
+	<body>
+		<form method='get'>
+			<input type='text' id='tes25' value='' name='tes25'>
+			<input type='text' id='tes26' value='' name='tes26'>
+		</form>
+
+		<script>
+			tgl({
+				input : 'tes25',
+				region : 'af',
+				day: 	{ 
+						af : ["Sondag","Maandag","Dinsdag","Woensdag","Donderdag","Vrydag","Saterdag"],
+					},
+				month: 	{ 
+						af : ["Januarie","Februarie","Maart","April","Mei","Junie","Julie","Augustus","September","Oktober","November","Desember"]
+					}
+			});
+
+			tgl({
+				input : 'tes26',
+				region : 'fil',
+				day: 	{ 
+						fil : ["Linggo","Lunes","Martes","Miyerkules","Huwebes","Biyernes","Sabado"],
+					},
+				month: 	{ 
+						fil : ["Enero","Pebrero","Marso","Abril","Mayo","Hunyo","Hulyo","Agosto","Setyembre","Oktubre","Nobyembre","Disyembre"]
+					}
+			});		</script>
+	</body>
+</html>
+</textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div class='bagian tengah'>
+	<div class='pemisah'>
+		<a href='#'><img src='images/atas.png'></img></a>
+	</div>
+</div>
+
+
+<div id='kaki' class='bagian'>
+	<div class='bagian-isi'>
+		<div class='isi'>
+			<p>muhammad@ahqof.com</p>
+			<p>+62 85 335 809 909</p>
+		</div>
+	</div>
+</div>
+
+
+
+
+<script>
+// merubah tinggi class code sesuai tinggi scroll
+var kode = document.getElementsByClassName('kode');
+for (var a=0; a < kode.length; a++){
+	if (kode[a].scrollHeight > kode[a].clientHeight) {
+	    kode[a].style.height = kode[a].scrollHeight + "px";
+	}
+}
+
+// membuat list menu
+var isimenu = document.getElementsByClassName('isimenu');
+var daftarmenu = "<ul>";
+for (var b=0; b < isimenu.length; b++){
+	daftarmenu += "<li><a href=#" + isimenu[b].getAttribute('id') + ">" + isimenu[b].getAttribute('label') + "</a></li>";		
+}
+daftarmenu += "</ul>";
+document.getElementById('menu').firstChild.nextSibling.firstChild.nextSibling.innerHTML += daftarmenu;
+
+//tgl.js
+
+tgl({
+	input : 'tes1'
+});
+
+tgl({
+	input : 'tes2',
+	shortDay : '1'
+});
+tgl({
+	input : 'tes3',
+	shortDay : '2'
+});
+tgl({
+	input : 'tes4',
+	shortDay : '3'
+});
+tgl({
+	input : 'tes5',
+	shortDay : '4'
+});
+
+/* theme2-pack */
+
+tgl({
+	input : 'tes6',
+	clasStyle : 'theme2-pack0-blue',
+});
+tgl({
+	input : 'tes7',
+	clasStyle : 'theme2-pack0-purple',
+});
+tgl({
+	input : 'tes8',
+	clasStyle : 'theme2-pack2-blue',
+});
+tgl({
+	input : 'tes9',
+	clasStyle : 'theme2-pack2-green',
+});
+tgl({
+	input : 'tes10',
+	clasStyle : 'theme2-pack2-orange',
+});
+tgl({
+	input : 'tes11',
+	clasStyle : 'theme2-pack3-red',
+});
+tgl({
+	input : 'tes12',
+	clasStyle : 'theme2-pack5-pink',
+});
+tgl({
+	input : 'tes13',
+	clasStyle : 'theme2-pack5-yellow',
+});
+tgl({
+	input : 'tes13a',
+	clasStyle : 'theme2-pack6-teal',
+});
+
+/* theme4-pack */
+
+tgl({
+	input : 'tes14',
+	clasStyle : 'theme4-pack1-blue',
+	shortDay : '2',
+});
+tgl({
+	input : 'tes15',
+	clasStyle : 'theme4-pack1-brown',
+	shortDay : '2',
+});
+tgl({
+	input : 'tes16',
+	clasStyle : 'theme4-pack1-green',
+	shortDay : '2',
+});
+tgl({
+	input : 'tes17',
+	clasStyle : 'theme4-pack1-pink',
+	shortDay : '2',
+});
+tgl({
+	input : 'tes18',
+	clasStyle : 'theme4-pack1-purple',
+	shortDay : '2',
+});
+tgl({
+	input : 'tes19',
+	clasStyle : 'theme4-pack1-red',
+	shortDay : '2',
+});
+tgl({
+	input : 'tes20',
+	clasStyle : 'theme4-pack1-teal',
+	shortDay : '2',
+});
+
+/* theme2-pack with time picker*/
+
+tgl({
+	input : 'tes6t',
+	clasStyle : 'theme2-pack0-blue',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes7t',
+	clasStyle : 'theme2-pack0-purple',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes8t',
+	clasStyle : 'theme2-pack2-blue',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes9t',
+	clasStyle : 'theme2-pack2-green',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes10t',
+	clasStyle : 'theme2-pack2-orange',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes11t',
+	clasStyle : 'theme2-pack3-red',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes12t',
+	clasStyle : 'theme2-pack5-pink',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes13t',
+	clasStyle : 'theme2-pack5-yellow',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes13at',
+	clasStyle : 'theme2-pack6-teal',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+
+/* theme4-pack with time picker*/
+
+tgl({
+	input : 'tes14t',
+	clasStyle : 'theme4-pack1-blue',
+	shortDay : '2',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes15t',
+	clasStyle : 'theme4-pack1-brown',
+	shortDay : '2',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes16t',
+	clasStyle : 'theme4-pack1-green',
+	shortDay : '2',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes17t',
+	clasStyle : 'theme4-pack1-pink',
+	shortDay : '2',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes18t',
+	clasStyle : 'theme4-pack1-purple',
+	shortDay : '2',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes19t',
+	clasStyle : 'theme4-pack1-red',
+	shortDay : '2',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+tgl({
+	input : 'tes20t',
+	clasStyle : 'theme4-pack1-teal',
+	shortDay : '2',
+	timePicker : true,
+	format : 'yyyy/mm/dd hh:nn'
+});
+
+/* theme2-pack time picker only*/
+
+tgl({
+	input : 'tes6ty',
+	clasStyle : 'theme2-pack0-blue',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes7ty',
+	clasStyle : 'theme2-pack0-purple',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes8ty',
+	clasStyle : 'theme2-pack2-blue',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes9ty',
+	clasStyle : 'theme2-pack2-green',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes10ty',
+	clasStyle : 'theme2-pack2-orange',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes11ty',
+	clasStyle : 'theme2-pack3-red',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes12ty',
+	clasStyle : 'theme2-pack5-pink',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes13ty',
+	clasStyle : 'theme2-pack5-yellow',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes13aty',
+	clasStyle : 'theme2-pack6-teal',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+
+/* theme4-pack time picker only*/
+
+tgl({
+	input : 'tes14ty',
+	clasStyle : 'theme4-pack1-blue',
+	shortDay : '2',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes15ty',
+	clasStyle : 'theme4-pack1-brown',
+	shortDay : '2',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes16ty',
+	clasStyle : 'theme4-pack1-green',
+	shortDay : '2',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes17ty',
+	clasStyle : 'theme4-pack1-pink',
+	shortDay : '2',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes18ty',
+	clasStyle : 'theme4-pack1-purple',
+	shortDay : '2',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes19ty',
+	clasStyle : 'theme4-pack1-red',
+	shortDay : '2',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+tgl({
+	input : 'tes20ty',
+	clasStyle : 'theme4-pack1-teal',
+	shortDay : '2',
+	timePicker : true,
+	datePicker : false,
+	format : 'hh:nn:ss'
+});
+
+/* format */
+
+tgl({
+	input : 'tes21',
+	format : 'dddd, d mmmm yyyy'
+});
+tgl({
+	input : 'tes22',
+	format : 'mm-dd-yyyy'
+});
+tgl({
+	input : 'tes23',
+	format : 'yyyy/m/d'
+});
+tgl({
+	input : 'tes24',
+	format : 'yyyy mmmm(m) dddd(d) '
+});
+
+tgl({
+	input : 'tes25',
+	region : 'af',
+	day: 	{ 
+			af : ["Sondag","Maandag","Dinsdag","Woensdag","Donderdag","Vrydag","Saterdag"],
+		},
+	month: 	{ 
+			af : ["Januarie","Februarie","Maart","April","Mei","Junie","Julie","Augustus","September","Oktober","November","Desember"]
+		}
+});
+tgl({
+	input : 'tes26',
+	region : 'fil',
+	day: 	{ 
+			fil : ["Linggo","Lunes","Martes","Miyerkules","Huwebes","Biyernes","Sabado"],
+		},
+	month: 	{ 
+			fil : ["Enero","Pebrero","Marso","Abril","Mayo","Hunyo","Hulyo","Agosto","Setyembre","Oktubre","Nobyembre","Disyembre"]
+		}
+});
+
+tgl({
+	input : 'tes2t',
+	timePicker : true
+});
+
+tgl({
+	input : 'tes3t',
+	timePicker : true,
+	datePicker : false
+});
+
+tgl({
+	input : 'tes21t',
+	format : 'dddd, d mmmm yyyy hh:nn',
+	timePicker : true
+});
+
+tgl({
+	input : 'tes22t',
+	format : 'hh:nn:ss',
+	timePicker : true,
+	datePicker : false
+});
+
+tgl({
+	input : 'tes23t',
+	format : 'h:n',
+	timePicker : true,
+	datePicker : false
+});
+
+tgl({
+	input : 'tes24t',
+	format : 'yyyy mmmm(m) dddd(d) h:n:s',
+	timePicker : true
+});
+</script>
+</body>
+</html>

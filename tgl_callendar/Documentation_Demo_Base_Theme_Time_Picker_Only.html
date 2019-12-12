@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Time Picker Only- tgl.js</title>
+		<script type="text/javascript" src="js/tgl.1.1.min.js"></script>
+	</head>
+
+	<body>
+		<form method='get'>
+			<input type='text' id='tes2t' value='' name='tes2t'>
+			<input type='text' id='tes3t' value='' name='tes3t'>
+		</form>
+
+		<script>
+			tgl({
+				input : 'tes2t',
+				timePicker : true,
+				datePicker : false,
+				format : 'hh:nn:ss'
+			});
+
+			tgl({
+				input : 'tes3t',
+				timePicker : true,
+				datePicker : false,
+				format : 'h:n'
+			});
+		</script>
+	</body>
+</html>
+
